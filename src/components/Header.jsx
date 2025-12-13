@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import HeaderLogo from "../assets/images/logo3.png";
+import '../styles/Header.css';
 
 export default function Header() {
   const location = useLocation();
@@ -190,10 +191,10 @@ export default function Header() {
           </Link>
           <a
             href="tel:+914023554572"
-            className="btn btn-light w-100 d-flex align-items-center justify-content-center gap-2"
+            className="btn btn-light w-100 d-flex align-items-center justify-content-center gap-2 text-black"
             onClick={() => setOpen(false)}
           >
-            <span className="bi bi-telephone-fill" style={{ color: "green" }}></span>
+            <span className="bi bi-telephone-fill " style={{ }}></span>
             +91-40-23554572
           </a>
         </div>

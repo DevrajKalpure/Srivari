@@ -1,7 +1,24 @@
+/* SECTION */
 .escape-section {
-  background: white;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
 }
 
+/* TEMPLE BACKGROUND */
+.temple-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 900px;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* TEXT */
 .escape-title {
   font-size: 48px;
   font-weight: 600;
@@ -11,7 +28,7 @@
 }
 
 .escape-title span {
-  color: black;
+  color: #000;
 }
 
 .escape-desc {
@@ -20,39 +37,83 @@
   width: 80%;
 }
 
+/* BUTTON */
 .escape-btn {
   background: #7a8f55;
   border-radius: 50px;
   border: none;
   font-size: 16px;
+  transition: all 0.3s ease;
 }
 
-.right-main-img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
+.escape-btn:hover {
+  background: #6b7f48;
+  transform: translateY(-2px);
 }
 
-
-
+/* FORM BOX */
 .enquiry-box {
-  background: white;
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* INPUTS */
 .enquiry-box input,
 .enquiry-box select {
   height: 45px;
 }
 
-.location {
-  font-size: 18px;
-  margin-bottom: 15px;
+/* IMAGE HOVER */
+.hover-img {
+  width: 60%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.form-check .form-check-input {
-  height: 20px;
-  width: 20px;
+.hover-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
+/* SCROLL ANIMATION */
+.scroll-animate {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.slide-left {
+  transform: translateX(-80px);
+}
+
+.slide-right {
+  transform: translateX(80px);
+}
+
+.scroll-animate.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* MOBILE & TABLET */
+@media (max-width: 768px) {
+  .slide-left,
+  .slide-right {
+    transform: translateY(40px);
+  }
+
+  .scroll-animate.show {
+    transform: translateY(0);
+  }
+
+  .escape-title {
+    font-size: 34px;
+  }
+
+  .escape-desc {
+    width: 100%;
+  }
+
+  .temple-bg {
+    display: none;
+  }
+}

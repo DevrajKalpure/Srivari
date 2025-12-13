@@ -11,17 +11,25 @@ import GallerySection from './components/GallerySection';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import FormSection from './components/FormSection';
+import AmenitiesSection from './components/AmenitiesSection';
+import MasterplanSection from './components/MasterplanSection';
+import LocationSection from './components/LocationSection';
+import SocialIcons from './components/SocialIcons';
 
 function App() {
   return (
     <div className="App">
-      <ScrollToTop/>
+      {/* <ScrollToTop/> */}
+      <SocialIcons/>
       <Header/>
       <HeroSection/>
       <ProjectSection/>
       <VideoSection/>
       <GallerySection/>
+      {/* <MasterplanSection/> */}
+      <AmenitiesSection/>
       <FormSection/>
+      <LocationSection/>
       <Footer/>
     </div>
   );

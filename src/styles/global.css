@@ -60,7 +60,7 @@
 }
 
 .scroll-animate.animate.slide-right {
-  animation: slideInRight 0.8s ease-out 0.2s forwards;
+  animation: slideInRight 0.8s ease-out 0.9s forwards;
 }
 
 .scroll-animate.animate.fade-in {
@@ -76,11 +76,11 @@
 }
 
 .slide-in-right {
-  animation: slideInRight 0.8s ease-out 0.2s forwards;
+  animation: slideInRight 0.8s ease-out 0.9s forwards;
 }
 
 /* ============ HEADER ============ */
-
+/* 
 .header {
   width: 100%;
   position: fixed;
@@ -236,7 +236,7 @@
   border: 1px solid green;
   border-radius: 100px;
   gap: 10px;
-}
+} */
 
 /* ============ HERO SECTION ============ */
 
@@ -286,42 +286,6 @@
 
 /* ============ PROJECT SECTION ============ */
 
-.image-section {
-  width: 100%;
-  height: 50vh;
-}
-
-.background-image-opacity {
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  opacity: 0.2;
-  z-index: 0;
-}
-
-.feature-icon {
-  width: 35px;
-  height: 35px;
-  object-fit: contain;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease;
-}
-
-.feature-icon:hover {
-  transform: scale(1.1);
-}
-
-.col-sm-4 h5 {
-  font-weight: 600;
-  color: #333;
-  margin-top: 10px;
-}
-
-.col-sm-4 p {
-  color: #666;
-  font-size: 0.95rem;
-}
 
 /* ============ VIDEO SECTION ============ */
 
@@ -376,7 +340,7 @@
 }
 
 /* ============ FOOTER ============ */
-
+/* 
 .footer {
   background: #1a1a1a;
   color: #fff;
@@ -539,7 +503,7 @@
 
 .footer-bottom-links a:hover {
   color: #007bff;
-}
+} */
 
 /* ============ RESPONSIVE ============ */
 

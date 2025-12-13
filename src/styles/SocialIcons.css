@@ -1,0 +1,76 @@
+.social-fixed {
+  position: fixed;
+  right: 12px;
+
+  /* 👇 little bit bottom from center */
+  top: 58%;
+  transform: translateY(-50%);
+
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.12);
+}
+
+/* Official brand colors */
+.instagram {
+  background: linear-gradient(
+    45deg,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  );
+}
+
+.facebook {
+  background: #1877f2;
+}
+
+.youtube {
+  background: #ff0000;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.phone {
+  background: #2e7d32;
+}
+
+/* 📱 Mobile tuning */
+@media (max-width: 576px) {
+  .social-fixed {
+    right: 8px;
+    top: 60%; /* slightly more bottom on mobile */
+  }
+
+  .social-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+}

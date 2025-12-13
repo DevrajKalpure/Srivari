@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import HeaderLogo from "../assets/images/logo2.jpeg";
+import HeaderLogo from "../assets/images/logo3.png";
+import "../styles/Footer.css";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,11 +12,11 @@ export default function Footer() {
         <div className="container">
           <div className="row mt-5">
             {/* ABOUT SECTION */}
-            <div className="col-lg-3 col-md-6 mt-4">
+            <div className="col-lg-3 col-md-6">
               <div className="footer-section">
                 <img src={HeaderLogo} alt="Logo" className="footer-logo mb-3" />
                 <p className="footer-text">
-                  Saibya Group - Creating exceptional living spaces rooted in
+                  chilkur - Creating exceptional living spaces rooted in
                   health, happiness, and nature.
                 </p>
                 <div className="social-links">
@@ -69,11 +70,11 @@ export default function Footer() {
                 </div>
                 <div className="contact-item">
                   <i className="bi bi-envelope-fill"></i>
-                  <a href="mailto:info@saibya.com">info@saibya.com</a>
+                  <a href="mailto:info@saibya.com">info@chilkur.com</a>
                 </div>
                 <div className="contact-item">
                   <i className="bi bi-geo-alt-fill"></i>
-                  <span>Bangalore, India</span>
+                  <span>Hyderabad, India</span>
                 </div>
               </div>
             </div>
@@ -81,11 +82,9 @@ export default function Footer() {
             {/* NEWSLETTER */}
             <div className="col-lg-3 col-md-6 mb-4">
               <div className="footer-section">
-                <h5 className="footer-title">Newsletter</h5>
-                <p className="footer-text">
-                  Subscribe to get updates about our projects
-                </p>
-                <form className="newsletter-form">
+                <h5 className="footer-title">Location</h5>
+                <p className="footer-text"></p>
+                {/* <form className="newsletter-form">
                   <input
                     type="email"
                     className="form-control mb-2"
@@ -94,7 +93,7 @@ export default function Footer() {
                   <button type="submit" className="btn btn-success w-100">
                     Subscribe
                   </button>
-                </form>
+                </form> */}
               </div>
             </div>
           </div>
@@ -105,22 +104,37 @@ export default function Footer() {
           {/* BOTTOM FOOTER */}
           <div className="footer-bottom">
             <div className="row align-items-center">
-              <div className="col-md-6">
+              <div className="col-md-4">
                 <p className="footer-copyright">
-                  &copy; {currentYear} Saibya Group. All rights reserved.
+                  &copy; {currentYear} chilkur. All rights reserved.
+                </p>
+              
+              </div>
+              <div className="col-md-4">
+                  <p className="footer-copyright text-center">
+                  Designed and Developed By{" "}
+                  <a
+                    href="https://www.dezainally.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-none "
+                  >
+                    Dezainally
+                  </a>
                 </p>
               </div>
-              <div className="col-md-6 text-md-end">
-                <ul className="footer-bottom-links">
+
+              <div className="col-md-4 d-flex justify-content-md-end justify-content-center align-items-center">
+                <ul className="footer-bottom-links d-flex justify-content-center align-items-center">
                   <li>
                     <a href="#privacy">Privacy Policy</a>
                   </li>
                   <li>
                     <a href="#terms">Terms & Conditions</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#sitemap">Sitemap</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

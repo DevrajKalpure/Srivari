@@ -1,6 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import videoFile from "../assets/images/video1.mp4";
+import vectorLeft from "../assets/images/vector1.jpg";
+import vectorRight from "../assets/images/vector2.jpg";
+
 
 export default function VideoSection() {
   return (
@@ -16,7 +19,9 @@ export default function VideoSection() {
           <source src={videoFile} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        
       </div>
+        
     </section>
   );
 }
