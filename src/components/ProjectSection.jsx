@@ -16,7 +16,7 @@ export default function ProjectSection() {
   const rightRef = useScrollAnimation();
 
   return (
-    <section className="container-fluid position-relative mb-5 py-5" id="projects">
+    <section className="container-fluid position-relative mb-5 " id="projects">
       <div className="project-section d-flex justify-content-center align-items-center p-lg-3 mt-3">
         <div className="container row align-items-center py-3">
 
