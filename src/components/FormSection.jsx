@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/FormSection.css";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
-import temple from "../assets/images/temple.jpg";
+import temple from "../assets/images/temple2.jpg";
 import natureImg from "../assets/images/nature2.jpeg";
 
 export default function FormSection() {
@@ -54,7 +54,7 @@ export default function FormSection() {
           ref={rightRef}
           className="col-md-5 px-0 scroll-animate slide-right"
         >
-          <div className="p-4 p-md-5">
+          <div className=" p-md-5">
             <div className="enquiry-box p-4">
               <h4 className="text-center mb-3">Enquire Now</h4>
 

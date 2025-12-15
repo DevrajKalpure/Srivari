@@ -16,7 +16,7 @@ export default function ProjectSection() {
   const rightRef = useScrollAnimation();
 
   return (
-    <section className="container-fluid position-relative mb-5 py-5">
+    <section className="container-fluid position-relative mb-5 py-5" id="projects">
       <div className="project-section d-flex justify-content-center align-items-center p-lg-3 mt-3">
         <div className="container row align-items-center py-3">
 
@@ -28,14 +28,14 @@ export default function ProjectSection() {
             <img
               src={projectImage}
               alt="Project"
-              className="image-section img-fluid rounded-3 project-img"
+              className="image-section img-fluid  project-img"
             />
           </div>
 
           {/* RIGHT CONTENT */}
           <div
             ref={rightRef}
-            className="col-md-6 p-4 scroll-animate slide-right"
+            className="col-md-6 p-lg-4 scroll-animate slide-right"
           >
             <h2>Chilkur Project</h2>
             <p>

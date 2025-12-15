@@ -19,9 +19,10 @@ export default function VideoSection() {
           <source src={videoFile} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        
-      </div>
-        
+        </div>
+        <div className="d-flex justify-content-start align-items-center">
+        <img src={vectorLeft} alt="vector left" className="vector-left w-100 h-50" />
+        </div>        
     </section>
   );
 }

@@ -42,7 +42,7 @@ export default function AmenitiesSection() {
   }, []);
 
   return (
-    <section className="amenities-section" ref={sectionRef}>
+    <section className="amenities-section" id="amenities" ref={sectionRef}>
       <div className="container">
         <div className="text-center mb-5 intro-text">
           <small className="text-muted">Luxuries of Chilkur</small>

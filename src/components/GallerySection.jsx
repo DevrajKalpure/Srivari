@@ -31,7 +31,7 @@ export default function GallerySection() {
   };
 
   return (
-    <div className="container-fluid gallery-section">
+    <div className="container-fluid gallery-section" id="gallery">
       <div className="container">
         {/* ================= DESKTOP LAYOUT ================= */}
         <div className="row align-items-stretch desktop-layout">
@@ -104,21 +104,21 @@ export default function GallerySection() {
         </div>
 
         {/* ================= MOBILE IMAGE ================= */}
-        <div className="mobile-layout d-lg-none text-center">
+        <div className="mobile-layout d-lg-none text-center position-relative">
           <img
             src={images[currentIndex]}
             alt=""
-            className="gallery-img mobile-img w-100 mb-3"
+            className="gallery-img mobile-img w-100"
           />
-        </div>
 
-        {/* ================= MOBILE ARROWS ================= */}
-        <div className="d-flex justify-content-center gap-4 d-lg-none">
-          <button className="arrow-btn" onClick={handlePrev}>
-            ←
+          {/* LEFT ARROW */}
+          <button className="arrow-btn arrow-left" onClick={handlePrev}>
+            ‹
           </button>
-          <button className="arrow-btn" onClick={handleNext}>
-            →
+
+          {/* RIGHT ARROW */}
+          <button className="arrow-btn arrow-right" onClick={handleNext}>
+            ›
           </button>
         </div>
       </div>

@@ -12,9 +12,9 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import FormSection from './components/FormSection';
 import AmenitiesSection from './components/AmenitiesSection';
-import MasterplanSection from './components/MasterplanSection';
 import LocationSection from './components/LocationSection';
 import SocialIcons from './components/SocialIcons';
+import Masterplan from './components/MasterPlan';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
       <ProjectSection/>
       <VideoSection/>
       <GallerySection/>
-      {/* <MasterplanSection/> */}
+      <Masterplan/>
       <AmenitiesSection/>
       <FormSection/>
       <LocationSection/>

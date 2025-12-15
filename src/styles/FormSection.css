@@ -13,7 +13,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 900px;
-  opacity: 0.04;
+  opacity: 0.2;
   pointer-events: none;
   z-index: 1;
 }
@@ -115,5 +115,8 @@
 
   .temple-bg {
     display: none;
+  }
+  .hover-img{
+    width: 100%;
   }
 }

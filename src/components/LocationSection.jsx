@@ -9,7 +9,7 @@ export default function LocationSection() {
   const rightRef = useScrollAnimation();
 
   return (
-    <section className="location-section pt-4">
+    <section className="location-section pt-4" id="location">
       <div className="container-lg">
         <div className="row align-items-center">
           {/* LEFT MAP */}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import HeaderLogo from "../assets/images/logo3.png";
-import '../styles/Header.css';
+import "../styles/Header.css";
 
 export default function Header() {
   const location = useLocation();
@@ -72,38 +72,41 @@ export default function Header() {
     >
       <div className="header-container">
         <div>
-          <Link to="/">
+          <a href="/">
             <img src={HeaderLogo} className="header-logo" alt="Chilkur logo" />
-          </Link>
+          </a>
         </div>
 
         {/* DESKTOP NAV */}
         <nav className="nav desktop-nav" aria-label="Primary navigation">
-          <Link to="/" className="taviraj-font nav-link">
-            Overview
-          </Link>
-          <Link to="/about" className="taviraj-font nav-link">
-            Pricing
-          </Link>
-          <Link to="/our-team" className="taviraj-font nav-link">
-            Masterplan
-          </Link>
-          <Link to="/projects" className="taviraj-font nav-link">
+          <a href="#projects" className="taviraj-font nav-link">
+            Projects
+          </a>
+          <a href="#gallery" className="taviraj-font nav-link">
+            Gallery
+          </a>
+          <a href="#masterplan" className="taviraj-font nav-link">
+            MasterPlan
+          </a>
+          <a href="#amenities" className="taviraj-font nav-link">
             Amenities
-          </Link>
-          <Link to="/services" className="taviraj-font nav-link">
-            Loaction
-          </Link>
+          </a>
+          <a href="#location" className="taviraj-font nav-link">
+            location
+          </a>
         </nav>
 
         <div className="m-0 buttons-links d-flex justify-content-center align-items-center gap-3 fs-5">
-          <Link
-            to="/contact-us"
-            className="btn btn-success  d-flex align-items-center btn-rounded "
+          
+          <a
+            href="/brochure.pdf" 
+            download
+            className="btn btn-success  d-flex align-items-center btn-rounded"
+            onClick={() => setOpen(false)}
           >
             <i className="bi bi-file-earmark-text"></i>
-            Download Brocher
-          </Link>
+            Download Brochure
+          </a>
 
           <a
             href="tel:+914023554572"
@@ -135,66 +138,78 @@ export default function Header() {
 
       {/* MOBILE MENU */}
       <div className={`mobile-menu ${open ? "open" : ""}`}>
-        <div
-          className="close-btn"
-          onClick={() => setOpen(false)}
-          onKeyDown={(e) => handleKeyToggle(e, () => setOpen(false))}
-          tabIndex="0"
-          role="button"
-          aria-label="Close menu"
-        >
-          &times;
+        <div>
+          <a href="/">
+            <img
+              src={HeaderLogo}
+              className="header-menu-logo"
+              alt="Chilkur logo"
+            />
+          </a>
+
+          <div
+            className="close-btn"
+            onClick={() => setOpen(false)}
+            onKeyDown={(e) => handleKeyToggle(e, () => setOpen(false))}
+            tabIndex="0"
+            role="button"
+            aria-label="Close menu"
+          >
+            &times;
+          </div>
         </div>
-        <Link
-          to="/"
+        <a
+          href="#projects"
           className="taviraj-font nav-link"
           onClick={() => setOpen(false)}
         >
-          Overview
-        </Link>
-        <Link
-          to="/about"
+          Projects
+        </a>
+        <a
+          href="#gallery"
           className="taviraj-font nav-link"
           onClick={() => setOpen(false)}
         >
-          Pricing
-        </Link>
-        <Link
-          to="/our-team"
+          Gallery
+        </a>
+        <a
+          href="#masterplan"
           className="taviraj-font nav-link"
           onClick={() => setOpen(false)}
         >
           Masterplan
-        </Link>
-        <Link
-          to="/projects"
+        </a>
+        <a
+          href="#amenities"
           className="taviraj-font nav-link"
           onClick={() => setOpen(false)}
         >
           Amenities
-        </Link>
-        <Link
-          to="/services"
+        </a>
+        <a
+          href="#location"
           className="taviraj-font nav-link"
           onClick={() => setOpen(false)}
         >
           Location
-        </Link>
+        </a>
         <div className="mobile-buttons mt-4 d-flex flex-column gap-2">
-          <Link
-            to="/contact-us"
+          <a
+            href="/brochure.pdf" // put your actual PDF path
+            download
             className="btn btn-success w-100 d-flex align-items-center justify-content-center gap-2"
             onClick={() => setOpen(false)}
           >
             <i className="bi bi-file-earmark-text"></i>
             Download Brochure
-          </Link>
+          </a>
+
           <a
             href="tel:+914023554572"
             className="btn btn-light w-100 d-flex align-items-center justify-content-center gap-2 text-black"
             onClick={() => setOpen(false)}
           >
-            <span className="bi bi-telephone-fill " style={{ }}></span>
+            <span className="bi bi-telephone-fill " style={{}}></span>
             +91-40-23554572
           </a>
         </div>
